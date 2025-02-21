@@ -54,6 +54,15 @@ export default function RegularNavbar() {
               Contact Us
             </Link>
           </li>
+          <li>
+            <Link
+              href="/about"
+              className="text-gray-700 hover:text-gray-900 transition"
+            >
+              About Us
+            </Link>
+          </li>
+
         </ul>
       </nav>
     </header>

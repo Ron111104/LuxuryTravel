@@ -11,6 +11,8 @@ import ExperienceDesigners from "@/components/Landing/ExperienceDesigners";
 import NewsAndPress from "@/components/Landing/NewsAndPress";
 import ClientTestimonials from "@/components/Landing/ClientTestimonials";
 import Footer from "@/components/Landing/Footer";
+import AboutUs from "@/components/Landing/AboutUs";
+
 export default function Home() {
   const heroRef = useRef(null);
   const [scrolledPastHero, setScrolledPastHero] = useState(false);
@@ -59,6 +61,7 @@ export default function Home() {
         <LuxuryDestinations />
         <ExperienceDesigners />
         <NewsAndPress />
+        <AboutUs />
         
       </div>
       <ClientTestimonials />
@@ -99,3 +102,10 @@ export default function Home() {
     </>
   );
 }
+
+
+
+
+
+
+
