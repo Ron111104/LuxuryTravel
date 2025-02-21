@@ -7,9 +7,9 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        playfair: ['"Playfair Display"', "serif"],
+        sans: ['"Open Sans"', "sans-serif"],
       },
     },
   },

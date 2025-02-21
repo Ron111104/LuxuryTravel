@@ -1,0 +1,45 @@
+// components/MagicalMemories.js
+import React from "react";
+import Image from "next/image";
+
+export default function MagicalMemories() {
+  return (
+    <section className="py-16 bg-white">
+      <div className="container mx-auto flex flex-col md:flex-row items-center px-6">
+        {/* Train image */}
+        <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+          <Image
+            src="https://adamsandbutler.b-cdn.net/app/uploads/2020/08/bryan-walker-v-IkXXcQ0Eo-unsplash-768x960.jpg"
+            alt="Train Image"
+            width={768}
+            height={960}
+            className="rounded-lg shadow"
+          />
+        </div>
+        {/* Text content */}
+        <div className="md:w-1/2">
+          <h2 className="text-4xl font-bold mb-4 font-playfair text-[#613842]">
+            Magical memories,<br />
+            Bespoke experiences
+          </h2>
+          <p className="text-gray-700 mb-4">
+            Once you have travelled the voyage never ends. Adams &amp; Butler
+            will open a world of wonders and create magical memories that will
+            stay with you far beyond your travels.
+          </p>
+          <p className="text-gray-700 mb-6">
+            Diverge from the typical tourist destinations in favour of unique,
+            authentic experiences. Experiences designed in the most inspiring
+            surroundings that will be yours, and yours only. Journeys that
+            create memorable moments and Adams &amp; Butler’s bespoke
+            itineraries will make this happen. The wonders of the world are
+            within your reach.
+          </p>
+          <button className="px-6 py-3 bg-black text-white font-semibold uppercase tracking-wider hover:bg-gray-800 transition">
+            Meet our team
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
