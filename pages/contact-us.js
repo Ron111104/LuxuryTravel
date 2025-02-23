@@ -23,20 +23,18 @@ const ContactUs = () => {
   };
 
   const prevTestimonial = () => {
-    setCurrentTestimonial(
-      (prev) => (prev - 1 + testimonials.length) % testimonials.length
-    );
+    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
 
   return (
     <section className="relative w-full min-h-screen pb-20 bg-[#F9F6F2]">
       {/* Background Image */}
       <div className="relative w-full h-[60vh]">
-        <Image
-          src="/images/contact-bg.jpg"
+        <Image 
+          src="/images/contact-bg.jpg" 
           alt="Scenic Coastal View"
-          layout="fill"
-          objectFit="cover"
+          fill
+          className="object-cover"
           priority
         />
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
@@ -44,10 +42,8 @@ const ContactUs = () => {
         {/* Heading */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
           <h1 className="text-6xl font-bold">Contact Us</h1>
-          <Link href="/plan-your-journey">
-            <a className="mt-6 px-6 py-3 border border-white text-lg font-semibold hover:bg-white hover:text-black transition">
-              PLAN YOUR JOURNEY →
-            </a>
+          <Link href="/plan-your-journey" className="mt-6 px-6 py-3 border border-white text-lg font-semibold hover:bg-white hover:text-black transition">
+            PLAN YOUR JOURNEY →
           </Link>
         </div>
       </div>
@@ -69,18 +65,10 @@ const ContactUs = () => {
       <div className="container mx-auto mt-12 px-6 md:px-20 lg:px-40 grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Contact Info */}
         <div className="text-left">
-          <p className="text-lg text-[#4C2A2A]">
-            <strong>Email:</strong> sales@adamsandbutler.com
-          </p>
-          <p className="mt-2 text-[#4C2A2A]">
-            <strong>US Toll Free:</strong> 1-800-894-5712
-          </p>
-          <p className="mt-1 text-[#4C2A2A]">
-            <strong>Australia Toll Free:</strong> 1-800-764-042
-          </p>
-          <p className="mt-1 text-[#4C2A2A]">
-            <strong>Ireland:</strong> +353-1-288-9355
-          </p>
+          <p className="text-lg text-[#4C2A2A]"><strong>Email:</strong> sales@adamsandbutler.com</p>
+          <p className="mt-2 text-[#4C2A2A]"><strong>US Toll Free:</strong> 1-800-894-5712</p>
+          <p className="mt-1 text-[#4C2A2A]"><strong>Australia Toll Free:</strong> 1-800-764-042</p>
+          <p className="mt-1 text-[#4C2A2A]"><strong>Ireland:</strong> +353-1-288-9355</p>
         </div>
 
         {/* Contact Form */}
@@ -120,7 +108,8 @@ const ContactUs = () => {
       {/* Footer Section */}
       <footer className="mt-20 bg-[#1a1a1a] text-white text-sm">
         <div className="text-center py-4 bg-[#e5d3c1] text-black font-medium">
-          Get the latest from Adams & Butler: <Link href="#"><a className="underline">Sign up to our Newsletter</a></Link>
+          Get the latest from Adams & Butler: 
+          <Link href="#" className="underline">Sign up to our Newsletter</Link>
         </div>
 
         {/* Logos Section */}
@@ -142,7 +131,7 @@ const ContactUs = () => {
         </div>
 
         <div className="text-center py-4">
-          <p>© 2025 Adams & Butler. <Link href="#"><a className="underline">Terms & Conditions</a></Link></p>
+          <p>© 2025 Adams & Butler. <Link href="#" className="underline">Terms & Conditions</Link></p>
         </div>
       </footer>
     </section>
