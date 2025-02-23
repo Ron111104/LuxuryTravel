@@ -64,7 +64,7 @@ export default function RegularNavbar() {
           </li>
           <li>
             <Link
-              href="/contact-us"
+              href="/contact"
               className="text-gray-700 hover:text-gray-900 transition"
             >
               Contact Us
