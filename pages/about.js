@@ -30,7 +30,7 @@ const About = () => {
           />
         </div>
         <div>
-          <h2 className="text-4xl font-bold mb-6">Magical Experiences</h2>
+          <h2 className="text-4xl font-bold mb-6">Magica Experiences</h2>
           <p className="text-lg text-gray-700 mb-4">
             Discover enchanting and exclusive experiences designed for you.
           </p>
