@@ -6,12 +6,12 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Adams &amp; Butler</title>
+        <title>Tourizo</title>
         <meta
           name="description"
           content="Luxury travel. Exclusive experiences. Custom journeys around the world."
         />
-        <link rel="icon" href="https://img.icons8.com/fluency/48/000000/luxury.png" />
+        <link rel="icon" href="/icon.jpg" />
       </Head>
       <Component {...pageProps} />
     </>

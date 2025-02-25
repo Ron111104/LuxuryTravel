@@ -1,6 +1,6 @@
 // components/HeroNavbar.js
 import Link from "next/link";
-
+import Image from "next/image";
 export default function HeroNavbar() {
     return (
       <header className="absolute top-0 left-0 w-full z-50 text-white">
@@ -17,9 +17,9 @@ export default function HeroNavbar() {
         <nav className="flex items-center justify-between px-8 py-4">
           {/* Brand / Logo */}
           <div className="text-2xl font-bold">
-            <Link href="/" className="hover:opacity-80 transition">
-              AB
-            </Link>
+          <Link href="/" className="hover:opacity-80 transition">
+  <Image src="/logo2.png" alt="Logo" width={60} height={40} />
+</Link>
           </div>
   
           {/* Nav Menu Items */}
@@ -40,7 +40,7 @@ export default function HeroNavbar() {
               </Link>
             </li>
             <li>
-              <Link href="/about" className="hover:text-gray-200 transition">
+              <Link href="/about-us" className="hover:text-gray-200 transition">
                 About Us
               </Link>
             </li>
@@ -50,7 +50,7 @@ export default function HeroNavbar() {
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:text-gray-200 transition">
+              <Link href="/contact-us" className="hover:text-gray-200 transition">
                 Contact Us
               </Link>
             </li>

@@ -1,15 +1,15 @@
 // components/RegularNavbar.js
 import Link from "next/link";
-
+import Image from "next/image";
 export default function RegularNavbar() {
   return (
     <header className="fixed top-0 w-full z-50 bg-white shadow">
       <nav className="container mx-auto flex items-center justify-between px-8 py-2">
         {/* Logo / Brand using custom serif font */}
         <div className="text-2xl font-playfair text-gray-800">
-          <Link href="/" className="hover:opacity-80 transition">
-            AB
-          </Link>
+        <Link href="/" className="hover:opacity-80 transition">
+  <Image src="/logo2.png" alt="Logo" width={60} height={40} />
+</Link>
         </div>
 
         {/* Full Nav Links using custom sans font */}
@@ -40,28 +40,29 @@ export default function RegularNavbar() {
           </li>
           <li>
             <Link
-              href="/about"
+              href="/about-us"
               className="text-gray-700 hover:text-gray-900 transition"
             >
               About Us
             </Link>
           </li>
           <li>
+            <Link
+              href="/blog-press"
+              className="text-gray-700 hover:text-gray-900 transition"
+            >
+              Blog & Press
+            </Link>
+          </li>
+          <li>
             <Link
-              href="/contact"
+              href="/contact-us"
               className="text-gray-700 hover:text-gray-900 transition"
             >
               Contact Us
             </Link>
           </li>
-          <li>
-            <Link
-              href="/about"
-              className="text-gray-700 hover:text-gray-900 transition"
-            >
-              About Us
-            </Link>
-          </li>
+         
 
         </ul>
       </nav>

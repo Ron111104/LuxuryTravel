@@ -10,7 +10,7 @@ import LuxuryDestinations from "@/components/Landing/LuxuryDestinations";
 import ExperienceDesigners from "@/components/Landing/ExperienceDesigners";
 import NewsAndPress from "@/components/Landing/NewsAndPress";
 import ClientTestimonials from "@/components/Landing/ClientTestimonials";
-import Footer from "@/components/Landing/Footer";
+import Footer from "@/components/Footer";
 import AboutUs from "@/components/Landing/AboutUs";
 
 export default function Home() {

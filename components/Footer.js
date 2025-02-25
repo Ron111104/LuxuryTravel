@@ -3,57 +3,58 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="bg-black text-white">
-      <div className="container mx-auto px-4 py-6">
-        <div className="grid md:grid-cols-3 gap-4">
+      <div className="container mx-auto px-4 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
           {/* Column 1: Logo/Brand Info */}
-          <div>
+          <div className="flex flex-col items-center">
             <h3 className="text-xl font-bold mb-2">Adams &amp; Butler</h3>
-            <p className="text-xs">
+            <p className="text-xs text-center">
               Luxury travel. Exclusive experiences. Custom journeys around the world.
             </p>
           </div>
 
           {/* Column 2: Quick Links */}
-          <div>
-            <h4 className="text-lg font-semibold mb-2">Quick Links</h4>
-            <ul className="text-xs">
-              <li className="mb-1">
-                <a href="#" className="hover:underline">
-                  Home
-                </a>
-              </li>
-              <li className="mb-1">
-                <a href="#" className="hover:underline">
-                  About Us
-                </a>
-              </li>
-              <li className="mb-1">
-                <a href="#" className="hover:underline">
-                  Destinations
-                </a>
-              </li>
-              <li className="mb-1">
-                <a href="#" className="hover:underline">
-                  Experiences
-                </a>
-              </li>
-              <li className="mb-1">
-                <a href="#" className="hover:underline">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
+          <div className="flex flex-col items-center">
+  <h4 className="text-lg font-semibold mb-2">Quick Links</h4>
+  <ul className="flex space-x-4 text-xs text-center">
+    <li>
+      <a href="#" className="hover:underline">
+        Home
+      </a>
+    </li>
+    <li>
+      <a href="#" className="hover:underline">
+        About Us
+      </a>
+    </li>
+    <li>
+      <a href="#" className="hover:underline">
+        Destinations
+      </a>
+    </li>
+    <li>
+      <a href="#" className="hover:underline">
+        Experiences
+      </a>
+    </li>
+    <li>
+      <a href="#" className="hover:underline">
+        Contact
+      </a>
+    </li>
+  </ul>
+</div>
+
 
           {/* Column 3: Social Media */}
-          <div>
+          <div className="flex flex-col items-center">
             <h4 className="text-lg font-semibold mb-2">Follow Us</h4>
-            <div className="flex space-x-3">
+            <div className="flex space-x-4">
               {/* Facebook */}
               <a href="#" className="hover:text-gray-400">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5"
+                  className="w-6 h-6"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -64,7 +65,7 @@ export default function Footer() {
               <a href="#" className="hover:text-gray-400">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5"
+                  className="w-6 h-6"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -75,7 +76,7 @@ export default function Footer() {
               <a href="#" className="hover:text-gray-400">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5"
+                  className="w-6 h-6"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -85,7 +86,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-4 text-center text-xs">
+        <div className="mt-8 text-center text-xs">
           © {new Date().getFullYear()} Adams &amp; Butler. All rights reserved.
         </div>
       </div>
