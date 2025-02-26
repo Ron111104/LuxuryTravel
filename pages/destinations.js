@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import ClientTestimonials from "@/components/Landing/ClientTestimonials"; // Import Testimonials
-import Footer from "@/components/Landing/Footer"; // Import Footer
+import Footer from "@/components/Footer"; // Import Footer
 
 const destinations = [
   { name: "Ooty", image: "/images/ooty.jpg", link: "/destinations/ooty" },

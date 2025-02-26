@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import ExperienceDesigners from "@/components/Landing/ExperienceDesigners";
-import Footer from "@/components/Landing/Footer";
+import Footer from "@/components/Footer";
 
 export default function Ooty() {
   const [selectedExperiences, setSelectedExperiences] = useState([]);
