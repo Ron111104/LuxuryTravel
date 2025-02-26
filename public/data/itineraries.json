@@ -1,0 +1,228 @@
+{
+  "Ooty": {
+    "image": "https://images.pexels.com/photos/6198199/pexels-photo-6198199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "Day 1": {
+      "title": "Nature and Adventure",
+      "image": "https://images.pexels.com/photos/19935191/pexels-photo-19935191/free-photo-of-building-on-green-hilltop.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "activities": [
+        {
+          "name": "Visit Pine Forest",
+          "image": "https://images.pexels.com/photos/9411142/pexels-photo-9411142.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        },
+        {
+          "name": "Explore Kamarajar Dam",
+          "image": "https://5.imimg.com/data5/SELLER/Default/2023/6/317469496/ZT/YH/FS/61387680/9-1-.jpg"
+        },
+        {
+          "name": "Film shooting locations at 6th Mile & 9th Mile",
+          "image": "https://ootyhoneymoon.com/wp-content/uploads/2019/11/6th-Mail-Ooty-Honeymoon-Place-Ooty-Tour-Packages-Tourism.jpg"
+        },
+        {
+          "name": "Horse ride through scenic landscapes",
+          "image": "https://traveleva.gumlet.io/activities/2202/2202_horse_riding.jpg?w=1244&h=312"
+        },
+        {
+          "name": "Boat ride at Pykara Lake",
+          "image": "https://www.ttdconline.com/_next/boat-house/pykara/6.jpg"
+        },
+        {
+          "name": "Explore Pykara Waterfalls",
+          "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/9b/41/39/fb-img-1536802621189.jpg?w=1200&h=1200&s=1"
+        },
+        {
+          "name": "Jungle safari at Mudumalai Wildlife Sanctuary",
+          "image": "https://www.mudumalainationalpark.in/images/jeep-safari1.jpg"
+        },
+        {
+          "name": "Visit Chocolate Museum & Factory",
+          "image": "https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/m-n-chocolate-museum-ooty-1679916033_ff73e82df0524c932fdd.webp"
+        }
+      ]
+    }
+  },
+    "Goa": {
+      "image": "https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "Day 1": {
+        "title": "Arrival in Goa and Evening Leisure",
+        "image": "https://images.pexels.com/photos/14759054/pexels-photo-14759054.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "description": "Upon arriving in Goa, either at Dabolim Airport, Madgaon Station, or Vasco-Da-Gama Railway Station, you'll be picked up and transferred to your hotel. After completing the check-in process, take some time to get refreshed and relax from your journey. The day is yours to enjoy at your leisure. In the evening, take a leisurely walk to a nearby beach, where you can unwind by the sea and enjoy the sunset. You can also explore the local market, immersing yourself in the vibrant atmosphere and discovering unique finds. Finally, return to your hotel to enjoy a relaxing night.",
+        "activities": [
+          {
+            "name": "Hotel Check-In",
+            "image": "https://images.pexels.com/photos/3183167/pexels-photo-3183167.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          },
+          {
+            "name": "Evening Beach Walk",
+            "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          },
+          {
+            "name": "Explore Local Market",
+            "image": "https://cdn.pixabay.com/photo/2018/08/14/13/23/market-3607282_1280.jpg"
+          }
+        ]
+      },
+      "Day 2": {
+        "title": "Adventure and Scenic Exploration in North Goa",
+        "image": "https://cdn.pixabay.com/photo/2017/05/30/05/46/goa-2355883_1280.jpg",
+        "description": "Start your day with an exhilarating Dolphin Boat Trip (Tickets cost is included), where you can spot playful dolphins in their natural habitat. Following the boat trip, visit Fort Aguada, a historic fort offering stunning views of the Arabian Sea. Next, head to Candolim Beach to relax and enjoy the sun, then move on to Calangute Beach for more beach activities and water sports. In the afternoon, unwind at Baga Beach and explore the Wax Museum to see lifelike figures of notable personalities. Conclude your day with a visit to Anjuna Beach and Vagator Beach for scenic beauty.",
+        "activities": [
+          {
+            "name": "Dolphin Boat Trip",
+            "image": "https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          },
+          {
+            "name": "Explore Fort Aguada",
+            "image": "https://images.pexels.com/photos/13980495/pexels-photo-13980495.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          },
+          {
+            "name": "Candolim Beach Relaxation",
+            "image": "https://images.unsplash.com/photo-1563720224300-63ec6b8bb1b9?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          },
+          {
+            "name": "Calangute Beach Activities",
+            "image": "https://cdn.pixabay.com/photo/2016/11/29/06/15/beach-1867282_1280.jpg"
+          },
+          {
+            "name": "Visit Wax Museum",
+            "image": "https://images.pexels.com/photos/19919356/pexels-photo-19919356/free-photo-of-figure-at-store.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          },
+          {
+            "name": "Anjuna & Vagator Beach",
+            "image": "https://images.pexels.com/photos/20717140/pexels-photo-20717140/free-photo-of-beach-and-hill-on-sea-coast.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          }
+        ]
+      },
+      "Day 3": {
+        "title": "Cultural and Historical Delights in South Goa",
+        "image": "https://images.pexels.com/photos/3316921/pexels-photo-3316921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "description": "Begin your exploration with a visit to Old Goa, starting with the historic St. Xavier’s Church, renowned for its stunning architecture and significance. Follow this with a visit to the Museum of Archaeology to delve into Goa’s rich past. Next, travel to the serene Mangeshi Temple, celebrated for its beautiful design and peaceful atmosphere. Enjoy lunch at a local restaurant, then head to a Spice Plantation to discover and taste the spices integral to Goan cuisine. In the afternoon, visit Panaji Church and take a leisurely stroll along Miramar Beach. Finish your day with a visit to Dona Paula, where you can enjoy picturesque views and a relaxing environment.",
+        "activities": [
+          {
+            "name": "St. Xavier’s Church",
+            "image": "https://images.unsplash.com/photo-1559128036-bc5fcaa86d86?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          },
+          {
+            "name": "Museum of Archaeology",
+            "image": "https://cdn.pixabay.com/photo/2017/09/07/06/56/museum-2723642_1280.jpg"
+          },
+          {
+            "name": "Mangeshi Temple",
+            "image": "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          },
+          {
+            "name": "Spice Plantation Tour",
+            "image": "https://images.unsplash.com/photo-1588854337111-e6a0e1436cc8?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          },
+          {
+            "name": "Panaji Church",
+            "image": "https://cdn.pixabay.com/photo/2017/10/19/18/35/church-2860745_1280.jpg"
+          },
+          {
+            "name": "Miramar Beach Walk",
+            "image": "https://images.pexels.com/photos/10295678/pexels-photo-10295678.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          },
+          {
+            "name": "Visit Dona Paula",
+            "image": "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          }
+        ]
+      },
+      "Day 4": {
+        "title": "Beach Bliss in South Goa",
+        "image": "https://images.pexels.com/photos/6747105/pexels-photo-6747105.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "description": "Begin your day in Goa with a visit to Palolem Beach, known for its stunning crescent-shaped shoreline and calm waters. Enjoy a peaceful morning by the beach, soaking up the sun and relaxing in the tranquil environment. Next, head to Agonda Beach, a quieter and more serene beach perfect for unwinding and taking in the natural beauty. Spend your midday here enjoying the serene atmosphere and perhaps having lunch at a beachside café. In the afternoon, make your way to Colva Beach, one of the most popular beaches in South Goa. Relax on its sandy shores, indulge in some last-minute shopping at local markets, or simply enjoy the lively atmosphere.",
+        "activities": [
+          {
+            "name": "Palolem Beach",
+            "image": "https://images.pexels.com/photos/242236/pexels-photo-242236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          },
+          {
+            "name": "Agonda Beach",
+            "image": "https://cdn.pixabay.com/photo/2021/03/07/09/37/beach-6072751_1280.jpg"
+          },
+          {
+            "name": "Colva Beach",
+            "image": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          }
+        ]
+      },
+      "Day 5": {
+        "title": "Leisure, Beach Stroll, and Night Disco Party Cruise",
+        "image": "https://images.pexels.com/photos/3567285/pexels-photo-3567285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "description": "Experience the Night Disco Party Cruise with convenient hotel pickup and drop-off. Board the cruise at 7:30 PM, where you'll be greeted with welcome drinks before setting sail at 8:00 PM along the Mandovi River. Enjoy a complimentary buffet dinner from 8:15 PM to 9:15 PM, featuring both vegetarian and non-vegetarian options. Throughout the evening, immerse yourself in a vibrant disco party with live DJ performances, games, and themed entertainment. Enjoy various dancing rounds designed for kids, couples, and families, and be entertained by captivating Goan and Portuguese folk dance performances. Complimentary drinks, including soft drinks, Kingfisher beer, and whisky, will be served. Special arrangements can also be made on board to celebrate birthdays or anniversaries. The cruise returns to the dock at 11:30 PM, and you'll be dropped back at your hotel, concluding your night of fun and celebration.",
+        "activities": [
+          {
+            "name": "Board the Cruise",
+            "image": "https://cdn.pixabay.com/photo/2017/02/15/12/12/cruise-2066195_1280.jpg"
+          },
+          {
+            "name": "Welcome Drinks",
+            "image": "https://images.unsplash.com/photo-1576618198823-fc3a9a749c7a?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          },
+          {
+            "name": "Buffet Dinner",
+            "image": "https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          },
+          {
+            "name": "Live DJ Performance",
+            "image": "https://cdn.pixabay.com/photo/2017/01/10/03/35/dj-1960019_1280.jpg"
+          }
+        ]
+      },
+      "Day 6": {
+        "title": "Adventure Party Boat Experience with Water Activities and Buffet Lunch",
+        "image": "https://images.pexels.com/photos/2100358/pexels-photo-2100358.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "description": "Start your Adventure Party Boat experience with a hotel pickup between 9:00 AM and 9:30 AM, followed by a transfer to the departure point. Board the boat by 10:00 AM and set off on your aquatic adventure. From 10:15 AM to 1:00 PM, enjoy a range of exhilarating activities, including a Boat Safari, Kayaking Sessions, SUP Board Sailing, and a Bumper Boat Ride. Thrill-seekers can also take part in Speed Boat Rides and Parasailing (subject to availability and weather conditions). All water ride costs are included, and non-swimmers can also enjoy the activities and relax on the boat. Sunbathe and take in the scenic views as you please. A complimentary buffet lunch with both vegetarian and non-vegetarian options will be served from 1:00 PM to 1:45 PM, along with 2 beers or soft drinks per person. After lunch, unwind with onboard entertainment, including music and games. The boat returns to the dock at 3:00 PM, and you’ll be transferred back to your hotel, concluding a day of fun and relaxation.",
+        "activities": [
+          {
+            "name": "Boat Safari",
+            "image": "https://images.pexels.com/photos/1149834/pexels-photo-1149834.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          },
+          {
+            "name": "Kayaking Session",
+            "image": "https://cdn.pixabay.com/photo/2016/07/22/09/20/kayaking-1531423_1280.jpg"
+          },
+          {
+            "name": "SUP Board Sailing",
+            "image": "https://images.unsplash.com/photo-1594087654907-8adca8c1d1f4?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          },
+          {
+            "name": "Bumper Boat Ride",
+            "image": "https://cdn.pixabay.com/photo/2017/05/16/09/43/bumper-boats-2317168_1280.jpg"
+          },
+          {
+            "name": "Speed Boat Ride",
+            "image": "https://images.pexels.com/photos/373945/pexels-photo-373945.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          },
+          {
+            "name": "Parasailing",
+            "image": "https://images.unsplash.com/photo-1611078489672-b06d5b6a1f54?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          },
+          {
+            "name": "Buffet Lunch",
+            "image": "https://cdn.pixabay.com/photo/2016/03/05/19/02/restaurant-1238609_1280.jpg"
+          }
+        ]
+      },
+      "Day 7": {
+        "title": "Relaxation and Departure",
+        "image": "https://images.pexels.com/photos/1531661/pexels-photo-1531661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "description": "On your last day in Goa, enjoy a leisurely morning at the hotel. Take time to savor a delicious breakfast and perhaps indulge in a final swim in the pool or a relaxing spa session. Afterward, complete the check-out process and ensure all your belongings are packed. If time permits, you can take a last stroll around the hotel grounds or nearby areas to soak in the ambiance one last time. Finally, you'll be transferred to Dabolim Airport, Madgaon Station, or Vasco-Da-Gama Railway Station for your departure, carrying with you fond memories of your Goa getaway.",
+        "activities": [
+          {
+            "name": "Leisure Breakfast",
+            "image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          },
+          {
+            "name": "Relaxing Spa Session",
+            "image": "https://cdn.pixabay.com/photo/2017/09/29/12/44/spa-2795198_1280.jpg"
+          },
+          {
+            "name": "Hotel Check-Out",
+            "image": "https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          }
+        ]
+      }
+    }
+  }
+  

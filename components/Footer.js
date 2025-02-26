@@ -7,9 +7,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
           {/* Column 1: Logo/Brand Info */}
           <div className="flex flex-col items-center">
-            <h3 className="text-xl font-bold mb-2">Adams &amp; Butler</h3>
+            <h3 className="text-xl font-bold mb-2">Tourizo</h3>
             <p className="text-xs text-center">
-              Luxury travel. Exclusive experiences. Custom journeys around the world.
+              Luxury travel. Exclusive experiences. Custom journeys around India.
             </p>
           </div>
 
@@ -18,12 +18,12 @@ export default function Footer() {
   <h4 className="text-lg font-semibold mb-2">Quick Links</h4>
   <ul className="flex space-x-4 text-xs text-center">
     <li>
-      <a href="#" className="hover:underline">
+      <a href="/" className="hover:underline">
         Home
       </a>
     </li>
     <li>
-      <a href="#" className="hover:underline">
+      <a href="/about-us" className="hover:underline">
         About Us
       </a>
     </li>
@@ -38,7 +38,7 @@ export default function Footer() {
       </a>
     </li>
     <li>
-      <a href="#" className="hover:underline">
+      <a href="contact-us" className="hover:underline">
         Contact
       </a>
     </li>
@@ -87,7 +87,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 text-center text-xs">
-          © {new Date().getFullYear()} Adams &amp; Butler. All rights reserved.
+          © {new Date().getFullYear()} Tourizo. All rights reserved.
         </div>
       </div>
     </footer>

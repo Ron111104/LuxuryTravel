@@ -16,7 +16,7 @@ export default function HeroSection({ heroRef }) {
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
         <h1 className="text-5xl md:text-7xl font-bold mb-2 font-playfair tracking-[0.1em] uppercase">
-          Adams &amp; Butler
+          TOURIZO
         </h1>
         <p className="text-xl md:text-3xl mb-6 font-sans tracking-[0.08em]">
           Hallmark of Luxury Travel
