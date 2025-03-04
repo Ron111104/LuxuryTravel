@@ -1,7 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 import ClientTestimonials from "@/components/Landing/ClientTestimonials"; // Import Testimonials
 import Footer from "@/components/Footer"; // Import Footer
+import LuxuryDestinations from "@/components/Landing/LuxuryDestinations";
 
 const destinations = [
   { name: "Ooty", image: "/images/ooty.jpg", link: "/destinations/ooty" },
@@ -9,31 +11,32 @@ const destinations = [
   { name: "Wayanad", image: "/images/wayanad.jpg", link: "/destinations/wayanad" },
   { name: "Chikmagalur", image: "/images/chikmagalur.jpg", link: "/destinations/chikmagalur" },
   { name: "Kodaikanal", image: "/images/kodaikanal.jpg", link: "/destinations/kodaikanal" },
-  { name: "Goa", image: "/images/goa.jpg", link: "/destinations/goa" },
   { name: "Mysore", image: "/images/mysore.jpg", link: "/destinations/mysore" },
-  { name: "Kerala", image: "/images/kerala.jpg", link: "/destinations/kerala" },
-  { name: "Andaman", image: "/images/andaman.jpg", link: "/destinations/andaman" },
 ];
 
 export default function Destinations() {
+  const [selectedDate, setSelectedDate] = useState("");
+
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      {/* Navigation Bar */}
-      <nav className="fixed top-0 w-full bg-black bg-opacity-80 p-4 flex justify-between items-center">
-        <div className="text-2xl font-bold px-6">LuxuryTravel</div>
-        <div className="flex space-x-6 px-6">
-          <Link href="/">Home</Link>
-          <Link href="/tailored-experiences">Tailored Experiences</Link>
-          <Link href="/destinations" className="border-b-2 border-white">Destinations</Link>
-          <Link href="/private-rentals">Private Rentals</Link>
-          <Link href="/about-us">About Us</Link>
-          <Link href="/blog">Blog & Press</Link>
-          <Link href="/contact-us">Contact Us</Link>
+      {/* Navigation Bar (Centered) */}
+      <nav className="fixed top-0 w-full bg-black bg-opacity-80 p-4 flex justify-center items-center z-50">
+        <div className="flex space-x-6">
+          <Link href="/" className="hover:text-gray-300">HOME</Link>
+          <Link href="/tailored-experiences" className="hover:text-gray-300">TAILORED EXPERIENCES</Link>
+          <Link href="/destinations" className="border-b-2 border-white text-gray-300">DESTINATIONS</Link>
+          <Link href="/private-rentals" className="hover:text-gray-300">PRIVATE RENTALS</Link>
+          <Link href="/about-us" className="hover:text-gray-300">ABOUT US</Link>
+          <Link href="/blog" className="hover:text-gray-300">BLOG & PRESS</Link>
+          <Link href="/contact-us" className="hover:text-gray-300">CONTACT US</Link>
         </div>
       </nav>
 
+      {/* Spacer to prevent content from being hidden under fixed nav */}
+      <div className="h-16"></div>
+
       {/* Hero Section */}
-      <header 
+      <header
         className="relative h-[500px] flex items-center justify-center bg-cover bg-center"
         style={{ backgroundImage: `url('/images/d1.jpg')` }}
       >
@@ -48,14 +51,21 @@ export default function Destinations() {
       </header>
 
       {/* Luxury Destinations Section */}
-      <section className="bg-[#f8f4f0] text-[#57342e] py-12 text-center">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-4xl font-serif mb-4">Luxury Destinations</h2>
-          <p className="text-lg leading-relaxed">
-            Let Adams & Butler open up a world of wonders and create magical memories that will stay with you far beyond your travels. 
-            Whatever your travel preference may be, whether you are looking for a cultural city break, a child-friendly family holiday, 
-            unlimited adventure, a romantic getaway, or just to escape and uncover, we are here to create a seamless experience while handcrafting your bespoke journey.
-          </p>
+      <LuxuryDestinations />
+
+      {/* Improved Date Picker Section */}
+      <section className="text-center py-8">
+        <h3 className="text-2xl font-semibold mb-4">Select Your Travel Date</h3>
+        <div className="relative inline-block">
+          <input
+            type="date"
+            className="opacity-0 absolute inset-0 w-full h-full cursor-pointer"
+            value={selectedDate}
+            onChange={(e) => setSelectedDate(e.target.value)}
+          />
+          <button className="bg-white text-black px-6 py-3 rounded-md shadow-md border border-gray-300 hover:bg-gray-200 transition duration-200">
+            {selectedDate ? `📅 ${selectedDate}` : "📆 Choose a Date"}
+          </button>
         </div>
       </section>
 
@@ -68,8 +78,8 @@ export default function Destinations() {
                 <Image
                   src={destination.image}
                   alt={destination.name}
-                  width={400} // Adjust width
-                  height={300} // Adjust height
+                  width={400}
+                  height={300}
                   className="w-full h-52 object-cover transition duration-300 group-hover:scale-105 rounded-lg"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-50 transition" />

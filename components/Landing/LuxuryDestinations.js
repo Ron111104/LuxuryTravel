@@ -4,44 +4,34 @@ import Image from "next/image";
 export default function LuxuryDestinations() {
   const destinations = [
     {
-      name: "Ireland",
+      name: "Coorg",
       image:
-        "https://adamsandbutler.b-cdn.net/app/uploads/2020/08/Cliffs-of-Moher-1000x750.jpg",
+        "/images/coorg.jpg",
     },
     {
-      name: "UK",
+      name: "Ooty",
       image:
-        "https://adamsandbutler.b-cdn.net/app/uploads/2020/08/connor-mollison-3rkosR_Dgfg-unsplash-1000x667.jpg",
+        "/images/ooty.jpg",
     },
     {
-      name: "Classic Europe",
+      name: "Wayanad",
       image:
-        "https://adamsandbutler.b-cdn.net/app/uploads/2020/08/jack-ward-rknrvCrfS1k-unsplash-1-768x681.jpg",
+        "/images/wayanad.jpg",
     },
     {
-      name: "Africa",
+      name: "Kodaikanal",
       image:
-        "https://adamsandbutler.b-cdn.net/app/uploads/2020/08/rsz_loisaba_tented_camp-768x489.jpg",
+        "/images/kodaikanal.jpg",
     },
     {
-      name: "The Americas",
+      name: "Chikmagalur",
       image:
-        "https://adamsandbutler.b-cdn.net/app/uploads/2020/08/ryk-porras-D5-LrW0cZps-unsplash-768x577.jpg",
+        "/images/chikmagalur.jpg",
     },
     {
-      name: "Exotic Islands",
+      name: "Mysore",
       image:
-        "https://adamsandbutler.b-cdn.net/app/uploads/2020/08/sorasak-_UIN-pFfJ7c-unsplash-3-500x334.jpg",
-    },
-    {
-      name: "Polar Regions",
-      image:
-        "https://adamsandbutler.b-cdn.net/app/uploads/2020/08/hans-jurgen-mager-CHqbiMhQ_wE-unsplash-500x333.jpg",
-    },
-    {
-      name: "Oceania",
-      image:
-        "https://adamsandbutler.b-cdn.net/app/uploads/2020/08/ian-badenhorst-SuT2MhkdyBQ-unsplash-500x364.jpg",
+        "/images/mysore.jpg",
     },
   ];
 
@@ -69,11 +59,7 @@ export default function LuxuryDestinations() {
           Luxury Destinations
         </h2>
         <p className="max-w-3xl mx-auto text-center text-lg text-gray-700 mb-8">
-          Let Adams &amp; Butler open up a world of wonders and create magical
-          memories that will stay with you far beyond your travels. Whether you
-          are looking for a cultural city break, a child-friendly family holiday,
-          unlimited adventure, a romantic getaway, or just to escape and uncover
-          hidden gems, we are here to handcraft your bespoke journey.
+        Let Toorizo take you on an unforgettable journey, crafting experiences that linger long after your travels. Whether you seek a serene escape into nature, an action-packed adventure, a romantic retreat, a family-friendly getaway, or a deep dive into rich cultural landscapes, we curate every detail to perfection. With Toorizo, every destination becomes a story, and every trip a cherished memory.
         </p>
 
         {/* Rectangular grid with fixed sizes and a gap between images */}

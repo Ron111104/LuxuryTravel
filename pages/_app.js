@@ -6,10 +6,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Tourizo</title>
+        <title>Toorizo</title>
         <meta
           name="description"
-          content="Luxury travel. Exclusive experiences. Custom journeys around the world."
+          content="Toorizo. Exclusive experiences. Custom journeys around the world."
         />
         <link rel="icon" href="/icon.jpg" />
       </Head>

@@ -5,18 +5,18 @@ export default function ClientTestimonials() {
   const testimonials = [
     {
       id: 1,
-      text: `I had a lovely conversation with Mr. Eisenhart, and he couldn't say enough about how wonderful their trip was. He gave me some wonderful feedback that I'd love to share with you. They were very pleased with their guide in Ireland, Bill. They said that he was absolutely wonderful. They also said that their half-day Connemara music tour was outstanding — the highlight of the trip. Their guide after their walking tour in Dublin, Frankie, was very good, particularly with engaging the kids. They all really enjoyed the bike ride, falconry, and the surfing lesson. Thank you so much for your help in putting this trip together. Mr. Eisenhart really couldn't stop gushing about how this was a trip of a lifetime.`,
-      agent: "Agent Allison Parker",
+      text: `Our trip to Kodaikanal with Toorizo was nothing short of magical! From the serene beauty of Coaker’s Walk to the breathtaking views at Dolphin’s Nose, everything was perfectly planned. Boating on Kodaikanal Lake during sunset was truly a mesmerizing experience. The visit to Pillar Rocks left us in awe, and the peaceful trek to Vattakanal Falls was refreshing. We even had a cozy bonfire night at our resort, which made the trip extra special. The entire experience was seamless, and Toorizo ensured we had the most comfortable accommodations and personalized service. A trip to remember forever!`,
+      agent: "Agent Rohan Mehta",
     },
     {
       id: 2,
-      text: `"The team at Adams & Butler curated an unforgettable journey for us. From private castle stays to intimate cultural experiences, every detail was handled with impeccable care. We can't wait to travel with them again! In addition, every aspect of the trip was personalized to our needs – from bespoke dining experiences to private tours of historical landmarks. It truly exceeded our expectations."`,
-      agent: "Agent John Smith",
+      text: `Chikmagalur was an absolute paradise, and thanks to Toorizo, our trip was flawless! The coffee plantation tour was a dream come true – learning about the coffee-making process while strolling through lush greenery was an unforgettable experience. Mullayanagiri Peak, the highest in Karnataka, provided breathtaking views, and our short trek there was totally worth it. We also explored the enchanting Hebbe Falls and relaxed at the serene Hirekolale Lake. From delicious local Malnad cuisine to a beautifully planned itinerary, every moment was perfect. Toorizo made sure we experienced Chikmagalur in the best way possible!`,
+      agent: "Agent Priya Sharma",
     },
     {
       id: 3,
-      text: `"We've never felt more looked after on a trip. From the moment we arrived, everything was smooth and tailored to our preferences. Our guides were knowledgeable, friendly, and went the extra mile to ensure our comfort. The level of service and attention to detail made this experience extraordinary, and we left with memories that will last a lifetime."`,
-      agent: "Agent Jane Doe",
+      text: `Our trip to Coorg with Toorizo was an absolute delight! From the moment we arrived at our cozy resort surrounded by lush coffee plantations, we knew this was going to be special. The guided coffee estate tour was both informative and fascinating, and the visit to Abbey Falls was breathtaking. We also had an amazing time at Dubare Elephant Camp, where we got to feed and bathe the elephants! The entire itinerary was well-planned, allowing us to experience both adventure and relaxation. Every little detail was handled with care, making this one of the best vacations we've had. Thank you, Toorizo, for an unforgettable experience!`,
+      agent: "Agent Ananya Iyer",
     },
   ];
 
