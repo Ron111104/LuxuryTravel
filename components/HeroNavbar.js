@@ -18,7 +18,7 @@ export default function HeroNavbar() {
           {/* Brand / Logo */}
           <div className="text-2xl font-bold">
           <Link href="/" className="hover:opacity-80 transition">
-  <Image src="/logo2.png" alt="Logo" width={60} height={40} />
+  <Image src="/icon.png" alt="Logo" width={60} height={40} />
 </Link>
           </div>
   

@@ -4,10 +4,6 @@ import RegularNavbar from "@/components/RegularNavbar";
 import HeroSection from "@/components/Landing/HeroSection";
 import MagicalMemories from "@/components/Landing/MagicalMemories";
 import TailorMade from "@/components/Landing/TailorMade";
-import FeaturedExperiences from "@/components/Landing/FeaturedExperiences";
-import LuxuryDestinations from "@/components/Landing/LuxuryDestinations";
-import ExperienceDesigners from "@/components/Landing/ExperienceDesigners";
-import NewsAndPress from "@/components/Landing/NewsAndPress";
 import ClientTestimonials from "@/components/Landing/ClientTestimonials";
 import Footer from "@/components/Footer";
 import AboutUs from "@/components/Landing/AboutUs";
@@ -39,6 +35,11 @@ export default function Home() {
       {/* Conditionally render the navbars */}
       {!scrolledPastHero ? <HeroNavbar /> : <RegularNavbar />}
 
+      {/* Centered Navigation Bar */}
+      <div className="flex justify-center items-center">
+        <RegularNavbar />
+      </div>
+
       {/* Hero Section */}
       <HeroSection heroRef={heroRef} />
 
@@ -46,14 +47,13 @@ export default function Home() {
       <div className="px-8 bg-white">
         <MagicalMemories />
         <TailorMade />
-        <FeaturedExperiences />
-        <LuxuryDestinations />
-        <ExperienceDesigners />
-        <NewsAndPress />
         <AboutUs />
       </div>
-      
+
+      {/* Client Testimonials Section */}
       <ClientTestimonials />
+
+      {/* Footer Section */}
       <Footer />
 
       {/* Floating Buttons (shown only after hero section) */}
