@@ -3,6 +3,7 @@ import Image from "next/image";
 import Footer from "@/components/Footer";
 import RegularNavbar from "@/components/RegularNavbar";
 import ClientTestimonials from "@/components/Landing/ClientTestimonials";
+import ChatWithUs from "@/components/ChatWithUs";
 
 const rentals = [
   {
@@ -162,6 +163,7 @@ export default function CabServices() {
       </section>
 
       {/* Footer */}
+      <ChatWithUs />
       <Footer />
     </div>
   );

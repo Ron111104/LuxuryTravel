@@ -5,6 +5,7 @@ import ClientTestimonials from "@/components/Landing/ClientTestimonials"; // Imp
 import Footer from "@/components/Footer"; // Import Footer
 import LuxuryDestinations from "@/components/Landing/LuxuryDestinations";
 import RegularNavbar from "@/components/RegularNavbar"; // Import Regular Navbar
+import ChatWithUs from "@/components/ChatWithUs";
 
 const destinations = [
   { name: "Ooty", image: "/images/ooty.jpg", link: "/destinations/ooty" },
@@ -75,9 +76,10 @@ export default function Destinations() {
 
       {/* Client Testimonials Section */}
       <ClientTestimonials />
-
+      <ChatWithUs />
       {/* Footer Section */}
       <Footer />
+      
     </div>
   );
 }
