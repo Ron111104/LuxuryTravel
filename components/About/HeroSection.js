@@ -11,7 +11,7 @@ const HeroSection = ({ heroRef }) => (
       className="absolute inset-0 w-full h-full"
     />
     <div className="absolute inset-0 bg-black bg-opacity-25 flex flex-col items-center justify-center text-white text-center p-6">
-      <h1 className="text-5xl font-bold uppercase">About Adams & Butler</h1>
+      <h1 className="text-5xl font-bold uppercase">About Toorizo</h1>
     </div>
   </section>
 );

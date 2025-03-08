@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import ExperienceDesigners from "@/components/Landing/ExperienceDesigners";
 import Footer from "@/components/Footer";
+import RegularNavbar from "@/components/RegularNavbar"; // Import Regular Navbar
 
 export default function Coorg() {
   const [selectedExperiences, setSelectedExperiences] = useState([]);
@@ -31,6 +32,10 @@ export default function Coorg() {
       <nav className="text-sm py-4 px-6">
         <Link href="/">Home</Link> {">"} <Link href="/destinations">Destinations</Link> {">"} Coorg
       </nav>
+      {/* Regular Navbar */}
+      <RegularNavbar />
+      
+        
 
       {/* Hero Section */}
       <header className="relative h-[500px] w-full">

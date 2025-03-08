@@ -25,7 +25,7 @@ const WorkWithUsSection = () => (
         {/* Links */}
         <div className="mt-6">
           <a href="#" className="block uppercase tracking-wide text-[#683838] font-semibold mb-2 hover:underline">
-            Join the A&amp;B Team
+            Join the Toorizo Team
           </a>
           <a href="#" className="block uppercase tracking-wide text-[#683838] font-semibold hover:underline">
             Interested in Partnering?

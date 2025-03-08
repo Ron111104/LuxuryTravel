@@ -7,10 +7,9 @@ import TailorMade from "@/components/Landing/TailorMade";
 import ClientTestimonials from "@/components/Landing/ClientTestimonials";
 import Footer from "@/components/Footer";
 import AboutUs from "@/components/Landing/AboutUs";
-
-// Import the new modularized components
-import ChatWithUsButton from "@/components/ChatWithUsButton";
+import ChatWithUs from "@/components/ChatWithUs"; 
 import GoToTopButton from "@/components/GoToTopButton";
+
 
 export default function Home() {
   const heroRef = useRef(null);
@@ -50,6 +49,7 @@ export default function Home() {
         <AboutUs />
       </div>
 
+
       {/* Client Testimonials Section */}
       <ClientTestimonials />
 
@@ -59,7 +59,10 @@ export default function Home() {
       {/* Floating Buttons (shown only after hero section) */}
       {showFloatingButtons && (
         <>
-          <ChatWithUsButton />
+          {/* Chat Component (Chat button is already inside `ChatWithUs`) */}
+          <ChatWithUs />
+
+          {/* Go to top button */}
           <GoToTopButton />
         </>
       )}

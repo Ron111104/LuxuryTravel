@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 // Import modularized Contact Us components
 import ContactHeroSection from "@/components/Contact-Us/ContactHeroSection";
 import GetInTouchSection from "@/components/Contact-Us/GetInTouchSection";
-import ChatWithUsButton from "@/components/ChatWithUsButton";
+import ChatWithUs from "@/components/ChatWithUs";
 import GoToTopButton from "@/components/GoToTopButton";
 
 export default function ContactUs() {
@@ -45,7 +45,7 @@ export default function ContactUs() {
       {/* Floating Buttons */}
       {showFloatingButtons && (
         <>
-          <ChatWithUsButton />
+          <ChatWithUs />
           <GoToTopButton />
         </>
       )}
