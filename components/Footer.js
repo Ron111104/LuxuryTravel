@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
           {/* Column 1: Logo/Brand Info */}
           <div className="flex flex-col items-center">
-            <h3 className="text-xl font-bold mb-2">Tourizo</h3>
+            <h3 className="text-xl font-bold mb-2">Toorizo</h3>
             <p className="text-xs text-center">
               Luxury travel. Exclusive experiences. Custom journeys around India.
             </p>
@@ -87,7 +87,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 text-center text-xs">
-          © {new Date().getFullYear()} Tourizo. All rights reserved.
+          © {new Date().getFullYear()} Toorizo. All rights reserved.
         </div>
       </div>
     </footer>

@@ -16,20 +16,14 @@ export default function HeroSection({ heroRef }) {
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
         <h1 className="text-5xl md:text-7xl font-bold mb-2 font-playfair tracking-[0.1em] uppercase">
-          TOURIZO
+          TOORIZO
         </h1>
         <p className="text-xl md:text-3xl mb-6 font-sans tracking-[0.08em]">
           Hallmark of Luxury Travel
         </p>
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
           <button className="px-8 py-3 text-white font-semibold uppercase tracking-wider">
-            Our Experiences
-          </button>
-          <button className="px-8 py-3 text-white font-semibold uppercase tracking-wider">
             Plan Your Journey
-          </button>
-          <button className="px-8 py-3 text-white font-semibold uppercase tracking-wider">
-            Webinars
           </button>
         </div>
       </div>
