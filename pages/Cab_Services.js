@@ -51,13 +51,15 @@ export default function CabServices() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-gray-900">
+    <div className="min-h-screen bg-white text-gray-900 max-w-full w-full mx-auto overflow-hidden">
       {/* Navbar */}
       <RegularNavbar />
 
       {/* Hero Section with Background Image */}
-      <header className="relative h-[500px] flex items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/cab-services.jpg')" }}>
+      <header
+        className="relative h-[500px] flex items-center justify-center bg-cover bg-center w-full"
+        style={{ backgroundImage: "url('/images/cab-services.jpg')" }}
+      >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="text-center relative z-10">
           <h1 className="text-6xl font-bold text-white">Cab Services</h1>
@@ -66,7 +68,7 @@ export default function CabServices() {
       </header>
 
       {/* Services Available Section */}
-      <section className="text-center py-12">
+      <section className="text-center py-12 max-w-full w-full mx-auto">
         <h2 className="text-4xl font-bold text-gray-800 mb-6">Services Available</h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
           Select from our range of well-maintained, luxurious, and comfortable cabs.
@@ -85,7 +87,7 @@ export default function CabServices() {
           </div>
         ))}
       </section>
-      <ClientTestimonials />
+      <ClientTestimonials className="max-w-full w-full mx-auto" />
 
       {/* Review Section */}
       <section className="max-w-6xl mx-auto py-12 px-6">
@@ -164,7 +166,7 @@ export default function CabServices() {
 
       {/* Footer */}
       <ChatWithUs />
-      <Footer />
+      <Footer className="max-w-full w-full mx-auto overflow-hidden" />
     </div>
   );
 }

@@ -29,7 +29,7 @@ export default function ContactUs() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white max-w-full w-full mx-auto overflow-hidden">
       {/* Conditionally render navbars */}
       {!scrolledPastHero ? <HeroNavbar /> : <RegularNavbar />}
 
@@ -37,10 +37,10 @@ export default function ContactUs() {
       <ContactHeroSection heroRef={heroRef} />
 
       {/* Get in Touch Section */}
-      <GetInTouchSection />
+      <GetInTouchSection className="max-w-full w-full mx-auto" />
 
       {/* Footer */}
-      <Footer />
+      <Footer className="max-w-full w-full mx-auto overflow-hidden" />
 
       {/* Floating Buttons */}
       {showFloatingButtons && (

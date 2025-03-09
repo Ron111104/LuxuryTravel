@@ -20,13 +20,13 @@ export default function Destinations() {
   const [selectedDate, setSelectedDate] = useState("");
 
   return (
-    <div className="min-h-screen bg-white text-black">
+    <div className="min-h-screen bg-white text-black max-w-full w-full mx-auto overflow-hidden">
       {/* Regular Navbar */}
       <RegularNavbar />
 
       {/* Hero Section */}
       <header
-        className="relative h-[500px] flex items-center justify-center bg-cover bg-center"
+        className="relative h-[500px] flex items-center justify-center bg-cover bg-center w-full"
         style={{ backgroundImage: `url('/images/d1.jpg')` }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -37,10 +37,10 @@ export default function Destinations() {
       </header>
 
       {/* Luxury Destinations Section */}
-      <LuxuryDestinations />
+      <LuxuryDestinations className="max-w-full w-full mx-auto" />
 
       {/* Travel Date Picker */}
-      <section className="text-center py-12 bg-white">
+      <section className="text-center py-12 bg-white max-w-full w-full mx-auto">
         <h3 className="text-2xl font-semibold mb-4 text-gray-800">Select Your Travel Date</h3>
         <div className="flex justify-center">
           <input
@@ -75,10 +75,10 @@ export default function Destinations() {
       </section>
 
       {/* Client Testimonials Section */}
-      <ClientTestimonials />
+      <ClientTestimonials className="max-w-full w-full mx-auto" />
       <ChatWithUs />
       {/* Footer Section */}
-      <Footer />
+      <Footer className="max-w-full w-full mx-auto overflow-hidden" />
       
     </div>
   );

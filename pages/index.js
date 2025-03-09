@@ -10,7 +10,6 @@ import AboutUs from "@/components/Landing/AboutUs";
 import ChatWithUs from "@/components/ChatWithUs"; 
 import GoToTopButton from "@/components/GoToTopButton";
 
-
 export default function Home() {
   const heroRef = useRef(null);
   const [scrolledPastHero, setScrolledPastHero] = useState(false);
@@ -30,31 +29,25 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <div className="min-h-screen bg-white max-w-full w-full mx-auto overflow-hidden">
       {/* Conditionally render the navbars */}
       {!scrolledPastHero ? <HeroNavbar /> : <RegularNavbar />}
-
-      {/* Centered Navigation Bar */}
-      <div className="flex justify-center items-center">
-        <RegularNavbar />
-      </div>
 
       {/* Hero Section */}
       <HeroSection heroRef={heroRef} />
 
       {/* Main Content */}
-      <div className="px-8 bg-white">
+      <div className="px-8">
         <MagicalMemories />
         <TailorMade />
         <AboutUs />
       </div>
 
-
       {/* Client Testimonials Section */}
-      <ClientTestimonials />
+      <ClientTestimonials className="max-w-full w-full mx-auto" />
 
       {/* Footer Section */}
-      <Footer />
+      <Footer className="max-w-full w-full mx-auto overflow-hidden" />
 
       {/* Floating Buttons (shown only after hero section) */}
       {showFloatingButtons && (
@@ -66,6 +59,6 @@ export default function Home() {
           <GoToTopButton />
         </>
       )}
-    </>
+    </div>
   );
 }
