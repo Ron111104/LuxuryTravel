@@ -1,3 +1,5 @@
+import { MongoClient } from "mongodb"; 
+
 export default async function handler(req, res) {
   console.log("MONGODB_URI:", process.env.MONGODB_URI); // Debugging
   
