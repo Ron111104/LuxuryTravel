@@ -35,82 +35,82 @@ export default function ClientTestimonials() {
   };
 
   return (
-    <section className="relative w-full min-h-screen">
+    <section className="relative w-full min-h-screen flex items-center justify-center">
       {/* Background Image */}
-      <div className="absolute inset-0">
-        <div className="relative w-full h-full">
-          <Image
-            src="https://adamsandbutler.b-cdn.net/app/uploads/2020/06/home_bottom_image@2x-2000x1892.jpg"
-            alt="Background"
-            fill
-            priority
-            className="object-cover object-center"
-            sizes="100vw"
-          />
-        </div>
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="https://adamsandbutler.b-cdn.net/app/uploads/2020/06/home_bottom_image@2x-2000x1892.jpg"
+          alt="Background"
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-white/70 backdrop-blur-sm sm:bg-white/50 md:bg-white/40" />
       </div>
 
-      {/* Content Container */}
-      <div className="relative z-10 container mx-auto px-4 py-16 text-center">
-        {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-bold font-playfair text-[#613842] mb-12">
+      {/* Content */}
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-16 text-center">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-playfair text-[#613842] mb-10">
           What our clients say
         </h2>
 
-        {/* Testimonial Content with fade-in transition */}
-        <div key={currentIndex} className="max-w-4xl mx-auto fade-in">
-          <p className="text-gray-800 text-base md:text-lg leading-relaxed mb-6">
+        {/* Testimonial */}
+        <div key={currentIndex} className="fade-in transition duration-500 ease-in-out">
+          <p className="text-gray-800 text-base sm:text-lg leading-relaxed mb-6 text-justify">
             {testimonials[currentIndex].text}
           </p>
           <p className="font-semibold text-lg text-[#613842]">
             {testimonials[currentIndex].agent}
           </p>
         </div>
+
+        {/* Controls */}
+        <div className="mt-10 flex justify-center space-x-6">
+          <button
+            onClick={goPrev}
+            className="w-10 h-10 rounded-full bg-[#613842] text-white flex items-center justify-center hover:bg-[#8a4c5c] transition"
+            aria-label="Previous Testimonial"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-5 h-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+          <button
+            onClick={goNext}
+            className="w-10 h-10 rounded-full bg-[#613842] text-white flex items-center justify-center hover:bg-[#8a4c5c] transition"
+            aria-label="Next Testimonial"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-5 h-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
 
-      {/* Fixed Carousel Controls Positioned at the Center Bottom */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex space-x-8">
-        <button
-          onClick={goPrev}
-          className="w-10 h-10 rounded-full bg-[#613842] text-white flex items-center justify-center hover:bg-[#8a4c5c] transition-colors"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-5 h-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-        </button>
-        <button
-          onClick={goNext}
-          className="w-10 h-10 rounded-full bg-[#613842] text-white flex items-center justify-center hover:bg-[#8a4c5c] transition-colors"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-5 h-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
-        </button>
-      </div>
-
-      {/* Fade-in Animation Styles */}
+      {/* Fade-in Animation */}
       <style jsx>{`
         .fade-in {
           animation: fadeIn 0.7s ease-in-out;
@@ -118,9 +118,11 @@ export default function ClientTestimonials() {
         @keyframes fadeIn {
           from {
             opacity: 0;
+            transform: translateY(10px);
           }
           to {
             opacity: 1;
+            transform: translateY(0);
           }
         }
       `}</style>

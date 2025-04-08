@@ -5,7 +5,7 @@ import HeroNavbar from "@/components/HeroNavbar";
 import RegularNavbar from "@/components/RegularNavbar";
 import Footer from "@/components/Footer";
 
-// Import modularized Contact Us components
+// Modular Sections
 import ContactHeroSection from "@/components/Contact-Us/ContactHeroSection";
 import GetInTouchSection from "@/components/Contact-Us/GetInTouchSection";
 import ChatWithUs from "@/components/ChatWithUs";
@@ -14,14 +14,15 @@ import GoToTopButton from "@/components/GoToTopButton";
 export default function ContactUs() {
   const heroRef = useRef(null);
   const [scrolledPastHero, setScrolledPastHero] = useState(false);
-  const [showFloatingButtons, setShowFloatingButtons] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (!heroRef.current) return;
+
       const heroHeight = heroRef.current.offsetHeight;
-      setScrolledPastHero(window.scrollY >= heroHeight);
-      setShowFloatingButtons(window.scrollY >= heroHeight);
+      const isPastHero = window.scrollY >= heroHeight;
+
+      setScrolledPastHero(isPastHero);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -29,21 +30,25 @@ export default function ContactUs() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white max-w-full w-full mx-auto overflow-hidden">
-      {/* Conditionally render navbars */}
-      {!scrolledPastHero ? <HeroNavbar /> : <RegularNavbar />}
+    <div className="min-h-screen w-full bg-white overflow-x-hidden">
+      {/* Conditional Navbar */}
+      {scrolledPastHero ? <RegularNavbar /> : <HeroNavbar />}
 
       {/* Hero Section */}
-      <ContactHeroSection heroRef={heroRef} />
+      <section ref={heroRef}>
+        <ContactHeroSection />
+      </section>
 
-      {/* Get in Touch Section */}
-      <GetInTouchSection className="max-w-full w-full mx-auto" />
+      {/* Get in Touch Form Section */}
+      <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <GetInTouchSection />
+      </section>
 
       {/* Footer */}
-      <Footer className="max-w-full w-full mx-auto overflow-hidden" />
+      <Footer className="w-full" />
 
       {/* Floating Buttons */}
-      {showFloatingButtons && (
+      {scrolledPastHero && (
         <>
           <ChatWithUs />
           <GoToTopButton />

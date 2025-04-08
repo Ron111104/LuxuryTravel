@@ -1,7 +1,9 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import HeroNavbar from "@/components/HeroNavbar";
 import RegularNavbar from "@/components/RegularNavbar";
 import Footer from "@/components/Footer";
+
+// About Us Sections
 import HeroSection from "@/components/About/HeroSection";
 import MagicalBespokeSection from "@/components/About/MagicalBespokeSection";
 import FullWidthImage from "@/components/About/FullWidthImage";
@@ -10,59 +12,60 @@ import OurTeamSection from "@/components/About/OurTeamSection";
 import VideoSection from "@/components/About/VideoSection";
 import TestimonialsSection from "@/components/About/TestimonialsSection";
 import WorkWithUsSection from "@/components/About/WorkWithUsSection";
+
 // Floating Buttons
 import ChatWithUs from "@/components/ChatWithUs";
 import GoToTopButton from "@/components/GoToTopButton";
 
-export default function About() {
-  const heroRef = useRef(null);
-  const [scrolledPastHero, setScrolledPastHero] = useState(false);
-  const [showFloatingButtons, setShowFloatingButtons] = useState(false);
+export default function AboutUs() {
+  const heroRef = useRef(null);
+  const [scrolledPastHero, setScrolledPastHero] = useState(false);
+  const [showFloatingButtons, setShowFloatingButtons] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!heroRef.current) return;
-      const heroHeight = heroRef.current.offsetHeight;
-      const scrollPosition = window.scrollY;
+  // Optimized scroll handler
+  const handleScroll = useCallback(() => {
+    if (!heroRef.current) return;
+    const heroHeight = heroRef.current.offsetHeight;
+    const scrollY = window.scrollY;
 
-      // Update state based on scroll position
-      setScrolledPastHero(scrollPosition >= heroHeight);
-      setShowFloatingButtons(scrollPosition >= heroHeight);
-    };
+    setScrolledPastHero(scrollY >= heroHeight);
+    setShowFloatingButtons(scrollY >= heroHeight);
+  }, []);
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [handleScroll]);
 
-  return (
-    <>
-      {/* Ensure navbars switch dynamically */}
-      {!scrolledPastHero ? <HeroNavbar /> : <RegularNavbar />}
+  return (
+    <>
+      {/* Dynamic Navbar */}
+      {scrolledPastHero ? <RegularNavbar /> : <HeroNavbar />}
 
-      {/* Hero Section with a ref to track height */}
-      <HeroSection heroRef={heroRef} />
+      {/* Hero Section with ref for scroll tracking */}
+      <HeroSection heroRef={heroRef} />
 
-      {/* Main About Content */}
-      <div className="bg-white text-black px-8 max-w-full w-full mx-auto overflow-hidden">
-        <MagicalBespokeSection />
-        <FullWidthImage />
-        <OurPromiseSection />
-        <OurTeamSection />
-        <VideoSection />
-        <TestimonialsSection />
-        <WorkWithUsSection />
-      </div>
+      {/* Page Content */}
+      <div className="bg-white text-black px-8 w-full mx-auto overflow-x-hidden">
+        <MagicalBespokeSection />
+        <FullWidthImage />
+        <OurPromiseSection />
+        <OurTeamSection />
+        <VideoSection />
+        <TestimonialsSection />
+        <WorkWithUsSection />
+      </div>
 
-      {/* Footer */}
-      <Footer className="max-w-full w-full mx-auto overflow-hidden" />
+      {/* Footer */}
+      <Footer className="w-full mx-auto overflow-hidden" />
 
-      {/* Floating Buttons */}
-      {showFloatingButtons && (
-        <>
-          <ChatWithUs />
-          <GoToTopButton />
-        </>
-      )}
-    </>
-  );
+      {/* Floating Buttons */}
+      {showFloatingButtons && (
+        <>
+          <ChatWithUs />
+          <GoToTopButton />
+        </>
+      )}
+    </>
+  );
 }
