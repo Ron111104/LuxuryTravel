@@ -11,8 +11,8 @@ export default function HeroNavbar() {
 
   const navItems = [
     { label: "Destinations", href: "/destinations" },
-    { label: "Cab Services", href: "/Cab_Services" },
     { label: "About Us", href: "/about-us" },
+    { label: "Cab Services", href: "/Cab_Services" },
     { label: "Contact Us", href: "/contact-us" },
   ];
 
