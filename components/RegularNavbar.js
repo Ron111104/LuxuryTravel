@@ -22,7 +22,7 @@ export default function RegularNavbar() {
         {/* Logo */}
         <div>
           <Link href="/" className="hover:opacity-80 transition">
-            <Image src="/icon.jpg" alt="Logo" width={60} height={40} />
+            <Image src="/icon1.jpg" alt="Logo" width={60} height={40} />
           </Link>
         </div>
 
