@@ -28,7 +28,7 @@ export default function HeroNavbar() {
       <nav className="flex items-center justify-between px-6 md:px-10 py-4 bg-transparent">
         {/* Logo */}
         <Link href="/" className="hover:opacity-80 transition">
-          <Image src="/icon.jpg" alt="Logo" width={60} height={40} />
+          <Image src="/icon1.jpg" alt="Logo" width={60} height={40} />
         </Link>
 
         {/* Desktop Nav */}
