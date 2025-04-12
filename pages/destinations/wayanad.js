@@ -5,7 +5,6 @@ import ExperienceDesigners from "@/components/Landing/ExperienceDesigners";
 import Footer from "@/components/Footer";
 import RegularNavbar from "@/components/RegularNavbar"; // Import Regular Navbar
 
-
 export default function Wayanad() {
   const [selectedExperiences, setSelectedExperiences] = useState([]);
 
@@ -33,8 +32,8 @@ export default function Wayanad() {
       <nav className="text-sm py-4 px-6">
         <Link href="/">Home</Link> {">"} <Link href="/destinations">Destinations</Link> {">"} Wayanad
       </nav>
-     <RegularNavbar />
- 
+      <RegularNavbar />
+
       {/* Hero Section */}
       <header className="relative h-[500px] w-full">
         <Image
@@ -58,7 +57,7 @@ export default function Wayanad() {
         <section className="text-xl leading-relaxed text-center mb-12">
           <p>
             Wayanad, located in the Western Ghats of Kerala, is known for its breathtaking landscapes, 
-            rich biodiversity, and serene waterfalls. Whether you're exploring lush forests, 
+            rich biodiversity, and serene waterfalls. Whether you&apos;re exploring lush forests, 
             trekking to stunning viewpoints, or experiencing local culture, Wayanad offers a perfect retreat 
             for nature lovers and adventure seekers.
           </p>

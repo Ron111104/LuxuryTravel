@@ -13,7 +13,7 @@ import Cookies from "js-cookie";
 
 export default function Home() {
   const heroRef = useRef(null);
-  const bookingRef = useRef(null); // 👈 NEW ref for booking section
+  const bookingRef = useRef(null);
 
   const [scrolledPastHero, setScrolledPastHero] = useState(false);
   const [showFloatingButtons, setShowFloatingButtons] = useState(false);
@@ -54,28 +54,30 @@ export default function Home() {
   }, []);
 
   const acceptAllCookies = () => {
-    Cookies.set(
-      "cookieConsent",
-      JSON.stringify({
-        essential: true,
-        analytics: true,
-        marketing: true,
-      }),
-      { expires: 30, path: "/" }
-    );
+    const consent = {
+      essential: true,
+      analytics: true,
+      marketing: true,
+    };
+    Cookies.set("cookieConsent", JSON.stringify(consent), {
+      expires: 30,
+      path: "/",
+    });
+    setCookiePreferences(consent);
     setShowCookiePopup(false);
   };
 
   const rejectCookies = () => {
-    Cookies.set(
-      "cookieConsent",
-      JSON.stringify({
-        essential: true,
-        analytics: false,
-        marketing: false,
-      }),
-      { expires: 30, path: "/" }
-    );
+    const consent = {
+      essential: true,
+      analytics: false,
+      marketing: false,
+    };
+    Cookies.set("cookieConsent", JSON.stringify(consent), {
+      expires: 30,
+      path: "/",
+    });
+    setCookiePreferences(consent);
     setShowCookiePopup(false);
   };
 
@@ -84,8 +86,8 @@ export default function Home() {
       expires: 30,
       path: "/",
     });
-    setShowCookieSettings(false);
     setShowCookiePopup(false);
+    setShowCookieSettings(false);
   };
 
   return (
@@ -99,7 +101,6 @@ export default function Home() {
           <AboutUs />
         </div>
 
-        {/* 🔽 Booking Section target (replace with actual booking component) */}
         <div ref={bookingRef} className="py-20 bg-gray-100 text-center">
           <h2 className="text-3xl font-bold text-[#613842] mb-4">Start Planning Your Journey</h2>
           <p className="text-gray-700 max-w-xl mx-auto">
@@ -121,25 +122,24 @@ export default function Home() {
       {showCookiePopup && (
         <div className="fixed bottom-4 left-4 right-4 sm:left-8 sm:right-8 p-4 bg-gray-900 text-white rounded-lg shadow-lg flex flex-col items-center text-center z-50">
           <p className="text-sm">
-            We use cookies to enhance your experience. Manage your preferences or read our{" "}
-            <a href="/privacy-policy" className="underline">Privacy Policy</a>.
+            We use cookies to enhance your browsing experience. You can accept all cookies, reject non-essential ones, or customize your preferences. Read our <a href="/privacy-policy" className="underline">Privacy Policy</a>.
           </p>
           <div className="mt-3 flex flex-wrap justify-center gap-2">
-            <button onClick={acceptAllCookies} className="bg-yellow-500 px-4 py-2 text-black rounded-lg">Accept Cookies</button>
-            <button onClick={() => setShowCookieSettings(true)} className="bg-gray-600 px-4 py-2 text-white rounded-lg">Change my preferences</button>
-            <button onClick={rejectCookies} className="bg-red-500 px-4 py-2 text-white rounded-lg">Reject Cookies</button>
+            <button onClick={acceptAllCookies} className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-white font-medium">Accept All</button>
+            <button onClick={rejectCookies} className="bg-red-500 hover:bg-red-600 px-4 py-2 rounded-lg text-white font-medium">Reject All</button>
+            <button onClick={() => setShowCookieSettings(true)} className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg text-white font-medium">Manage Preferences</button>
           </div>
         </div>
       )}
 
       {showCookieSettings && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-sm sm:max-w-md">
-            <h2 className="text-xl font-semibold mb-4">Manage Cookie Preferences</h2>
-            <div className="flex flex-col space-y-3">
+          <div className="bg-white p-6 rounded-lg shadow-xl w-full max-w-sm sm:max-w-md">
+            <h2 className="text-xl font-semibold mb-4 text-center">Manage Cookie Preferences</h2>
+            <div className="flex flex-col gap-3 text-sm">
               <label className="flex items-center">
-                <input type="checkbox" checked={cookiePreferences.essential} disabled className="mr-2" />
-                Essential Cookies (Required)
+                <input type="checkbox" checked disabled className="mr-2" />
+                Essential Cookies (Always enabled)
               </label>
               <label className="flex items-center">
                 <input
@@ -160,9 +160,9 @@ export default function Home() {
                 Marketing Cookies
               </label>
             </div>
-            <div className="mt-4 flex justify-end space-x-3">
-              <button onClick={() => setShowCookieSettings(false)} className="bg-gray-400 px-4 py-2 text-black rounded-lg">Cancel</button>
-              <button onClick={saveCookiePreferences} className="bg-blue-500 px-4 py-2 text-white rounded-lg">Save Preferences</button>
+            <div className="mt-5 flex justify-end gap-2">
+              <button onClick={() => setShowCookieSettings(false)} className="bg-gray-200 px-4 py-2 rounded-lg text-gray-700">Cancel</button>
+              <button onClick={saveCookiePreferences} className="bg-blue-500 px-4 py-2 rounded-lg text-white">Save Preferences</button>
             </div>
           </div>
         </div>

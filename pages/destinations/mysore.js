@@ -5,7 +5,6 @@ import ExperienceDesigners from "@/components/Landing/ExperienceDesigners";
 import Footer from "@/components/Footer";
 import RegularNavbar from "@/components/RegularNavbar"; // Import Regular Navbar
 
-
 export default function Mysore() {
   const [selectedExperiences, setSelectedExperiences] = useState([]);
 
@@ -33,8 +32,8 @@ export default function Mysore() {
       <nav className="text-sm py-4 px-6">
         <Link href="/">Home</Link> {">"} <Link href="/destinations">Destinations</Link> {">"} Mysore
       </nav>
-     <RegularNavbar />
-     
+      <RegularNavbar />
+      
       {/* Hero Section */}
       <header className="relative h-[500px] w-full">
         <Image
@@ -53,7 +52,7 @@ export default function Mysore() {
       <section className="max-w-4xl mx-auto px-6 py-12 text-center text-xl leading-relaxed">
         <p>
           Known for its magnificent palaces, royal heritage, and vibrant culture, Mysore is one of 
-          South India's most historically rich cities. Whether you're exploring the Mysore Palace, 
+          South India&apos;s most historically rich cities. Whether you&apos;re exploring the Mysore Palace, 
           visiting Chamundi Hill, or shopping for silk, Mysore offers a regal experience like no other.
         </p>
       </section>
